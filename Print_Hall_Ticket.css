@@ -1,0 +1,149 @@
+.hallticket-container {
+    box-shadow: 0px 0px 10px 5px rgba(14, 78, 146, 0.603);
+    padding: 20px 30px;
+    border-radius: 20px;
+    height: 70vh;
+    margin: 40px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hallticket-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20%;
+    transform-origin: left top;
+    width: 75%;
+    height: 100%;
+    background-color: rgb(14, 78, 146);
+    transform: skew(-30deg);
+    z-index: -1;
+}
+
+.hallticket-heading {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.hallticket-heading h4 {
+    margin-left: 120px;
+    word-spacing: 20px;
+}
+
+.hallticket-heading h4 span {
+    color: rgb(14, 78, 146);
+}
+
+.input-container {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.row-height {
+    height: 40vh;
+}
+
+.input-box {
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    box-shadow: 8px 8px 4px 0px rgba(0, 70, 145, 0.79);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.input-box p,
+.form-input-box p {
+    margin-bottom: 0;
+    color: rgb(2, 59, 120);
+    font-weight: 600;
+}
+
+.input-box input,
+.form-input-box input {
+    width: 100%;
+    margin: 4px 0px;
+    border-radius: 20px;
+    border: 1px solid #c1c1c1;
+    outline: none;
+    padding: 2px 15px;
+}
+
+.input-box input:focus,
+.form-input-box input:focus {
+    border: 2px solid #000;
+}
+
+.form-input-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px 50px auto 20px;
+}
+
+.form-input-box input {
+    width: 90%;
+}
+
+.btn {
+    background-color: green;
+    color: #fff !important;
+    border-radius: 20px;
+    padding: 5px 8px;
+}
+
+.btn-box {
+    float: right;
+    margin-right: 120px;
+    margin-top: 30px;
+}
+
+.btn:hover {
+    background-color: rgb(2, 59, 120);
+}
+
+@media screen and (max-width:992px) {
+
+    .hallticket-container::before {
+        width: 90%;
+    }
+
+    .input-container {
+        justify-content: center;
+    }
+
+    .form-input-box {
+        width: 100%;
+    }
+
+    .hallticket-heading h4,
+    .hallticket-heading h4 span {
+        margin-left: 0px;
+        word-spacing: 10px;
+        color: #000;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+
+    .hallticket-container,
+    .row-height {
+        height: auto;
+    }
+
+}

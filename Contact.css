@@ -1,0 +1,45 @@
+.contact-container {
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px rgba(14, 78, 146, 0.603);
+    height: 70vh;
+    overflow: hidden;
+}
+
+.blue-box {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(14, 78, 146);
+    padding: 65px;
+    color: #fff;
+}
+
+.address-list {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:992px) {
+
+    .contact-container {
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width:568px) {
+
+    .address-list {
+        font-size: 14px;
+    }
+
+    .blue-box {
+        padding: 30px;
+    }
+
+    .row>* {
+        padding: 0;
+    }
+
+}
